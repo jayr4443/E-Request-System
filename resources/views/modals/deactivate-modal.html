@@ -1,0 +1,51 @@
+    <!-- Deactivate Modal -->
+    <div id="deactivate-modal" class="modal-overlay hidden">
+      <div class="modal w-full max-w-md mx-4">
+        <div class="p-6">
+          <div class="flex items-start gap-4">
+            <div
+              class="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6 text-red-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-display font-bold text-slate-800 text-lg">
+                Deactivate User
+              </h3>
+              <p class="text-slate-500 text-sm mt-1">
+                Are you sure you want to deactivate
+                <strong id="deactivate-name" class="text-slate-700"></strong>?
+                They will no longer be able to log in.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-3 mt-6">
+            <button
+              onclick="closeModal('deactivate-modal')"
+              class="btn btn-secondary flex-1 justify-center"
+            >
+              Cancel
+            </button>
+            <button
+              onclick="confirmDeactivate()"
+              class="btn btn-danger flex-1 justify-center"
+            >
+              Deactivate
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>

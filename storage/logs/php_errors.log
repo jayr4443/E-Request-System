@@ -1,0 +1,528 @@
+[08-Jun-2026 03:44:16 Europe/Berlin] === LOGIN ATTEMPT ===
+[08-Jun-2026 03:44:16 Europe/Berlin] JSON input: Array
+(
+    [email] => joshua.rolloque
+    [password] => 2022@CBK!
+)
+
+[08-Jun-2026 03:44:16 Europe/Berlin] Login data received: Array
+(
+    [email] => joshua.rolloque
+    [password] => 2022@CBK!
+)
+
+[08-Jun-2026 03:44:16 Europe/Berlin] Username/Email input: joshua.rolloque
+[08-Jun-2026 03:44:16 Europe/Berlin] Password length: 9
+[08-Jun-2026 03:44:16 Europe/Berlin] Local auth: Trying username: joshua.rolloque
+[08-Jun-2026 03:44:16 Europe/Berlin] API exception [AuthController::login]: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mpc_ers.users' doesn't exist
+[08-Jun-2026 03:45:01 Europe/Berlin] === LOGIN ATTEMPT ===
+[08-Jun-2026 03:45:01 Europe/Berlin] JSON input: Array
+(
+    [email] => admin@cbkhardware.com
+    [password] => password
+)
+
+[08-Jun-2026 03:45:01 Europe/Berlin] Login data received: Array
+(
+    [email] => admin@cbkhardware.com
+    [password] => password
+)
+
+[08-Jun-2026 03:45:01 Europe/Berlin] Username/Email input: admin@cbkhardware.com
+[08-Jun-2026 03:45:01 Europe/Berlin] Password length: 8
+[08-Jun-2026 03:45:01 Europe/Berlin] Local auth: Trying email: admin@cbkhardware.com
+[08-Jun-2026 03:45:01 Europe/Berlin] Attempting LDAP authentication for: admin@cbkhardware.com
+[08-Jun-2026 03:45:01 Europe/Berlin] LDAP connection established to: ldap://172.30.5.5
+[08-Jun-2026 03:45:01 Europe/Berlin] LDAP: Attempting email authentication: admin@cbkhardware.com
+[08-Jun-2026 03:45:01 Europe/Berlin] LDAP: Email login attempt: admin@cbkhardware.com
+[08-Jun-2026 03:45:01 Europe/Berlin] LDAP: Direct email bind failed, trying search...
+[08-Jun-2026 03:45:01 Europe/Berlin] LDAP: Search filter for email: (&(objectClass=user)(objectCategory=person)(mail=admin@cbkhardware.com))
+[08-Jun-2026 03:45:01 Europe/Berlin] LDAP: Search failed - Operations error
+[08-Jun-2026 03:45:01 Europe/Berlin] LDAP: Trying sAMAccountName from email: admin
+[08-Jun-2026 03:45:01 Europe/Berlin] LDAP: All authentication attempts failed for: admin@cbkhardware.com - Error: Invalid credentials
+[08-Jun-2026 03:45:01 Europe/Berlin] LDAP authentication returned false
+[08-Jun-2026 03:45:01 Europe/Berlin] LDAP authentication failed for: admin@cbkhardware.com
+[08-Jun-2026 03:45:01 Europe/Berlin] Authentication failed for: admin@cbkhardware.com
+[08-Jun-2026 03:45:04 Europe/Berlin] === LOGIN ATTEMPT ===
+[08-Jun-2026 03:45:04 Europe/Berlin] JSON input: Array
+(
+    [email] => admin@cbkhardware.com
+    [password] => password
+)
+
+[08-Jun-2026 03:45:04 Europe/Berlin] Login data received: Array
+(
+    [email] => admin@cbkhardware.com
+    [password] => password
+)
+
+[08-Jun-2026 03:45:04 Europe/Berlin] Username/Email input: admin@cbkhardware.com
+[08-Jun-2026 03:45:04 Europe/Berlin] Password length: 8
+[08-Jun-2026 03:45:04 Europe/Berlin] Local auth: Trying email: admin@cbkhardware.com
+[08-Jun-2026 03:45:04 Europe/Berlin] Attempting LDAP authentication for: admin@cbkhardware.com
+[08-Jun-2026 03:45:04 Europe/Berlin] LDAP connection established to: ldap://172.30.5.5
+[08-Jun-2026 03:45:04 Europe/Berlin] LDAP: Attempting email authentication: admin@cbkhardware.com
+[08-Jun-2026 03:45:04 Europe/Berlin] LDAP: Email login attempt: admin@cbkhardware.com
+[08-Jun-2026 03:45:04 Europe/Berlin] LDAP: Direct email bind failed, trying search...
+[08-Jun-2026 03:45:04 Europe/Berlin] LDAP: Search filter for email: (&(objectClass=user)(objectCategory=person)(mail=admin@cbkhardware.com))
+[08-Jun-2026 03:45:04 Europe/Berlin] LDAP: Search failed - Operations error
+[08-Jun-2026 03:45:04 Europe/Berlin] LDAP: Trying sAMAccountName from email: admin
+[08-Jun-2026 03:45:04 Europe/Berlin] LDAP: All authentication attempts failed for: admin@cbkhardware.com - Error: Invalid credentials
+[08-Jun-2026 03:45:04 Europe/Berlin] LDAP authentication returned false
+[08-Jun-2026 03:45:04 Europe/Berlin] LDAP authentication failed for: admin@cbkhardware.com
+[08-Jun-2026 03:45:04 Europe/Berlin] Authentication failed for: admin@cbkhardware.com
+[08-Jun-2026 03:45:17 Europe/Berlin] === LOGIN ATTEMPT ===
+[08-Jun-2026 03:45:17 Europe/Berlin] JSON input: Array
+(
+    [email] => admin@cbkhardware.com
+    [password] => 1
+)
+
+[08-Jun-2026 03:45:17 Europe/Berlin] Login data received: Array
+(
+    [email] => admin@cbkhardware.com
+    [password] => 1
+)
+
+[08-Jun-2026 03:45:17 Europe/Berlin] Username/Email input: admin@cbkhardware.com
+[08-Jun-2026 03:45:17 Europe/Berlin] Password length: 1
+[08-Jun-2026 03:45:17 Europe/Berlin] Local auth: Trying email: admin@cbkhardware.com
+[08-Jun-2026 03:45:17 Europe/Berlin] Attempting LDAP authentication for: admin@cbkhardware.com
+[08-Jun-2026 03:45:17 Europe/Berlin] LDAP connection established to: ldap://172.30.5.5
+[08-Jun-2026 03:45:17 Europe/Berlin] LDAP: Attempting email authentication: admin@cbkhardware.com
+[08-Jun-2026 03:45:17 Europe/Berlin] LDAP: Email login attempt: admin@cbkhardware.com
+[08-Jun-2026 03:45:17 Europe/Berlin] LDAP: Direct email bind failed, trying search...
+[08-Jun-2026 03:45:17 Europe/Berlin] LDAP: Search filter for email: (&(objectClass=user)(objectCategory=person)(mail=admin@cbkhardware.com))
+[08-Jun-2026 03:45:17 Europe/Berlin] LDAP: Search failed - Operations error
+[08-Jun-2026 03:45:17 Europe/Berlin] LDAP: Trying sAMAccountName from email: admin
+[08-Jun-2026 03:45:17 Europe/Berlin] LDAP: All authentication attempts failed for: admin@cbkhardware.com - Error: Invalid credentials
+[08-Jun-2026 03:45:17 Europe/Berlin] LDAP authentication returned false
+[08-Jun-2026 03:45:17 Europe/Berlin] LDAP authentication failed for: admin@cbkhardware.com
+[08-Jun-2026 03:45:17 Europe/Berlin] Authentication failed for: admin@cbkhardware.com
+[08-Jun-2026 03:45:39 Europe/Berlin] === LOGIN ATTEMPT ===
+[08-Jun-2026 03:45:39 Europe/Berlin] JSON input: Array
+(
+    [email] => mpc@gmail.com
+    [password] => 1
+)
+
+[08-Jun-2026 03:45:39 Europe/Berlin] Login data received: Array
+(
+    [email] => mpc@gmail.com
+    [password] => 1
+)
+
+[08-Jun-2026 03:45:39 Europe/Berlin] Username/Email input: mpc@gmail.com
+[08-Jun-2026 03:45:39 Europe/Berlin] Password length: 1
+[08-Jun-2026 03:45:39 Europe/Berlin] Local auth: Trying email: mpc@gmail.com
+[08-Jun-2026 03:45:39 Europe/Berlin] Attempting LDAP authentication for: mpc@gmail.com
+[08-Jun-2026 03:45:39 Europe/Berlin] LDAP connection established to: ldap://172.30.5.5
+[08-Jun-2026 03:45:39 Europe/Berlin] LDAP: Attempting email authentication: mpc@gmail.com
+[08-Jun-2026 03:45:39 Europe/Berlin] LDAP: Email login attempt: mpc@gmail.com
+[08-Jun-2026 03:45:40 Europe/Berlin] LDAP: Direct email bind failed, trying search...
+[08-Jun-2026 03:45:40 Europe/Berlin] LDAP: Search filter for email: (&(objectClass=user)(objectCategory=person)(mail=mpc@gmail.com))
+[08-Jun-2026 03:45:40 Europe/Berlin] LDAP: Search failed - Operations error
+[08-Jun-2026 03:45:40 Europe/Berlin] LDAP: Trying sAMAccountName from email: mpc
+[08-Jun-2026 03:45:40 Europe/Berlin] LDAP: All authentication attempts failed for: mpc@gmail.com - Error: Invalid credentials
+[08-Jun-2026 03:45:40 Europe/Berlin] LDAP authentication returned false
+[08-Jun-2026 03:45:40 Europe/Berlin] LDAP authentication failed for: mpc@gmail.com
+[08-Jun-2026 03:45:40 Europe/Berlin] Authentication failed for: mpc@gmail.com
+[08-Jun-2026 03:45:42 Europe/Berlin] === LOGIN ATTEMPT ===
+[08-Jun-2026 03:45:42 Europe/Berlin] JSON input: Array
+(
+    [email] => mpc@gmail.com
+    [password] => 123456
+)
+
+[08-Jun-2026 03:45:42 Europe/Berlin] Login data received: Array
+(
+    [email] => mpc@gmail.com
+    [password] => 123456
+)
+
+[08-Jun-2026 03:45:42 Europe/Berlin] Username/Email input: mpc@gmail.com
+[08-Jun-2026 03:45:42 Europe/Berlin] Password length: 6
+[08-Jun-2026 03:45:42 Europe/Berlin] Local auth: Trying email: mpc@gmail.com
+[08-Jun-2026 03:45:42 Europe/Berlin] Attempting LDAP authentication for: mpc@gmail.com
+[08-Jun-2026 03:45:42 Europe/Berlin] LDAP connection established to: ldap://172.30.5.5
+[08-Jun-2026 03:45:42 Europe/Berlin] LDAP: Attempting email authentication: mpc@gmail.com
+[08-Jun-2026 03:45:42 Europe/Berlin] LDAP: Email login attempt: mpc@gmail.com
+[08-Jun-2026 03:45:42 Europe/Berlin] LDAP: Direct email bind failed, trying search...
+[08-Jun-2026 03:45:42 Europe/Berlin] LDAP: Search filter for email: (&(objectClass=user)(objectCategory=person)(mail=mpc@gmail.com))
+[08-Jun-2026 03:45:42 Europe/Berlin] LDAP: Search failed - Operations error
+[08-Jun-2026 03:45:42 Europe/Berlin] LDAP: Trying sAMAccountName from email: mpc
+[08-Jun-2026 03:45:42 Europe/Berlin] LDAP: All authentication attempts failed for: mpc@gmail.com - Error: Invalid credentials
+[08-Jun-2026 03:45:42 Europe/Berlin] LDAP authentication returned false
+[08-Jun-2026 03:45:42 Europe/Berlin] LDAP authentication failed for: mpc@gmail.com
+[08-Jun-2026 03:45:42 Europe/Berlin] Authentication failed for: mpc@gmail.com
+[08-Jun-2026 03:45:44 Europe/Berlin] === LOGIN ATTEMPT ===
+[08-Jun-2026 03:45:44 Europe/Berlin] JSON input: Array
+(
+    [email] => mpc@gmail.com
+    [password] => 12345678
+)
+
+[08-Jun-2026 03:45:44 Europe/Berlin] Login data received: Array
+(
+    [email] => mpc@gmail.com
+    [password] => 12345678
+)
+
+[08-Jun-2026 03:45:44 Europe/Berlin] Username/Email input: mpc@gmail.com
+[08-Jun-2026 03:45:44 Europe/Berlin] Password length: 8
+[08-Jun-2026 03:45:44 Europe/Berlin] Local auth: Trying email: mpc@gmail.com
+[08-Jun-2026 03:45:44 Europe/Berlin] Attempting LDAP authentication for: mpc@gmail.com
+[08-Jun-2026 03:45:44 Europe/Berlin] LDAP connection established to: ldap://172.30.5.5
+[08-Jun-2026 03:45:44 Europe/Berlin] LDAP: Attempting email authentication: mpc@gmail.com
+[08-Jun-2026 03:45:44 Europe/Berlin] LDAP: Email login attempt: mpc@gmail.com
+[08-Jun-2026 03:45:44 Europe/Berlin] LDAP: Direct email bind failed, trying search...
+[08-Jun-2026 03:45:44 Europe/Berlin] LDAP: Search filter for email: (&(objectClass=user)(objectCategory=person)(mail=mpc@gmail.com))
+[08-Jun-2026 03:45:44 Europe/Berlin] LDAP: Search failed - Operations error
+[08-Jun-2026 03:45:44 Europe/Berlin] LDAP: Trying sAMAccountName from email: mpc
+[08-Jun-2026 03:45:44 Europe/Berlin] LDAP: All authentication attempts failed for: mpc@gmail.com - Error: Invalid credentials
+[08-Jun-2026 03:45:44 Europe/Berlin] LDAP authentication returned false
+[08-Jun-2026 03:45:44 Europe/Berlin] LDAP authentication failed for: mpc@gmail.com
+[08-Jun-2026 03:45:44 Europe/Berlin] Authentication failed for: mpc@gmail.com
+[08-Jun-2026 03:45:46 Europe/Berlin] === LOGIN ATTEMPT ===
+[08-Jun-2026 03:45:46 Europe/Berlin] JSON input: Array
+(
+    [email] => mpc@gmail.com
+    [password] => 123456f@
+)
+
+[08-Jun-2026 03:45:46 Europe/Berlin] Login data received: Array
+(
+    [email] => mpc@gmail.com
+    [password] => 123456f@
+)
+
+[08-Jun-2026 03:45:46 Europe/Berlin] Username/Email input: mpc@gmail.com
+[08-Jun-2026 03:45:46 Europe/Berlin] Password length: 8
+[08-Jun-2026 03:45:46 Europe/Berlin] Local auth: Trying email: mpc@gmail.com
+[08-Jun-2026 03:45:46 Europe/Berlin] Local auth successful via email: mpc@gmail.com
+[08-Jun-2026 03:45:46 Europe/Berlin] Local authentication successful for: mpc@gmail.com
+[08-Jun-2026 03:45:46 Europe/Berlin] Login successful for: mpc@gmail.com
+[08-Jun-2026 03:45:46 Europe/Berlin] Token generated: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkI...
+[08-Jun-2026 03:46:57 Europe/Berlin] API exception [NotificationController::newNotifications]: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mpc_ers.tbl_token_blacklist' doesn't exist
+[08-Jun-2026 03:47:00 Europe/Berlin] API exception [NotificationController::newNotifications]: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mpc_ers.tbl_token_blacklist' doesn't exist
+[08-Jun-2026 03:47:03 Europe/Berlin] API exception [NotificationController::newNotifications]: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mpc_ers.tbl_token_blacklist' doesn't exist
+[08-Jun-2026 03:47:03 Europe/Berlin] API exception [NotificationController::newNotifications]: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mpc_ers.tbl_token_blacklist' doesn't exist
+[08-Jun-2026 03:47:06 Europe/Berlin] API exception [NotificationController::newNotifications]: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mpc_ers.tbl_token_blacklist' doesn't exist
+[08-Jun-2026 03:47:09 Europe/Berlin] API exception [NotificationController::newNotifications]: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mpc_ers.tbl_token_blacklist' doesn't exist
+[08-Jun-2026 03:47:12 Europe/Berlin] API exception [NotificationController::newNotifications]: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mpc_ers.tbl_token_blacklist' doesn't exist
+[08-Jun-2026 03:47:15 Europe/Berlin] API exception [NotificationController::newNotifications]: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mpc_ers.tbl_token_blacklist' doesn't exist
+[08-Jun-2026 03:47:18 Europe/Berlin] API exception [NotificationController::newNotifications]: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mpc_ers.tbl_token_blacklist' doesn't exist
+[08-Jun-2026 03:47:18 Europe/Berlin] API exception [NotificationController::newNotifications]: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mpc_ers.tbl_token_blacklist' doesn't exist
+[08-Jun-2026 03:47:21 Europe/Berlin] API exception [NotificationController::newNotifications]: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mpc_ers.tbl_token_blacklist' doesn't exist
+[08-Jun-2026 03:47:24 Europe/Berlin] API exception [NotificationController::newNotifications]: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mpc_ers.tbl_token_blacklist' doesn't exist
+[08-Jun-2026 03:59:11 Europe/Berlin] === LOGIN ATTEMPT ===
+[08-Jun-2026 03:59:11 Europe/Berlin] JSON input: Array
+(
+    [email] => joshua.rolloque
+    [password] => 2022@CBK!
+)
+
+[08-Jun-2026 03:59:11 Europe/Berlin] Login data received: Array
+(
+    [email] => joshua.rolloque
+    [password] => 2022@CBK!
+)
+
+[08-Jun-2026 03:59:11 Europe/Berlin] Username/Email input: joshua.rolloque
+[08-Jun-2026 03:59:11 Europe/Berlin] Password length: 9
+[08-Jun-2026 03:59:11 Europe/Berlin] Local auth: Trying username: joshua.rolloque
+[08-Jun-2026 03:59:11 Europe/Berlin] Attempting LDAP authentication for: joshua.rolloque
+[08-Jun-2026 03:59:11 Europe/Berlin] LDAP connection established to: ldap://172.30.5.5
+[08-Jun-2026 03:59:11 Europe/Berlin] LDAP: Attempting username authentication: joshua.rolloque
+[08-Jun-2026 03:59:11 Europe/Berlin] LDAP: Username login attempt: joshua.rolloque
+[08-Jun-2026 03:59:11 Europe/Berlin] LDAP: Trying UPN: joshua.rolloque@cbkhi.group.local
+[08-Jun-2026 03:59:11 Europe/Berlin] LDAP: Bind successful with UPN: joshua.rolloque@cbkhi.group.local
+[08-Jun-2026 03:59:11 Europe/Berlin] LDAP: Search filter for username: (&(objectClass=user)(objectCategory=person)(sAMAccountName=joshua.rolloque))
+[08-Jun-2026 03:59:11 Europe/Berlin] LDAP: Found 1 entries
+[08-Jun-2026 03:59:11 Europe/Berlin] LDAP: User data retrieved - Email: joshua.rolloque@cobankiat.com.ph, Name: Joshua G. Rolloque
+[08-Jun-2026 03:59:11 Europe/Berlin] LDAP auth result: Array
+(
+    [username] => joshua.rolloque
+    [email] => joshua.rolloque@cobankiat.com.ph
+    [upn] => joshua.rolloque@cbkhi.group.local
+    [name] => Joshua G. Rolloque
+    [first_name] => Joshua
+    [last_name] => Rolloque
+    [department] => Information Technology
+    [employee_id] => 
+    [title] => System Support / Programmer Associate
+    [company] => HBI
+    [telephone] => 
+    [from_ldap] => 1
+)
+
+[08-Jun-2026 03:59:11 Europe/Berlin] Login successful for: joshua.rolloque@cobankiat.com.ph
+[08-Jun-2026 03:59:11 Europe/Berlin] Token generated: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkI...
+[08-Jun-2026 03:59:42 Europe/Berlin] === LOGIN ATTEMPT ===
+[08-Jun-2026 03:59:42 Europe/Berlin] JSON input: Array
+(
+    [email] => mpc@gmail.com
+    [password] => 123456f@
+)
+
+[08-Jun-2026 03:59:42 Europe/Berlin] Login data received: Array
+(
+    [email] => mpc@gmail.com
+    [password] => 123456f@
+)
+
+[08-Jun-2026 03:59:42 Europe/Berlin] Username/Email input: mpc@gmail.com
+[08-Jun-2026 03:59:42 Europe/Berlin] Password length: 8
+[08-Jun-2026 03:59:42 Europe/Berlin] Local auth: Trying email: mpc@gmail.com
+[08-Jun-2026 03:59:42 Europe/Berlin] Local auth successful via email: mpc@gmail.com
+[08-Jun-2026 03:59:42 Europe/Berlin] Local authentication successful for: mpc@gmail.com
+[08-Jun-2026 03:59:42 Europe/Berlin] Login successful for: mpc@gmail.com
+[08-Jun-2026 03:59:42 Europe/Berlin] Token generated: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkI...
+[08-Jun-2026 04:15:43 Europe/Berlin] === LOGIN ATTEMPT ===
+[08-Jun-2026 04:15:43 Europe/Berlin] JSON input: Array
+(
+    [email] => admin@cbkhardware.com
+    [password] => 123456f@
+)
+
+[08-Jun-2026 04:15:43 Europe/Berlin] Login data received: Array
+(
+    [email] => admin@cbkhardware.com
+    [password] => 123456f@
+)
+
+[08-Jun-2026 04:15:43 Europe/Berlin] Username/Email input: admin@cbkhardware.com
+[08-Jun-2026 04:15:43 Europe/Berlin] Password length: 8
+[08-Jun-2026 04:15:43 Europe/Berlin] Local auth: Trying email: admin@cbkhardware.com
+[08-Jun-2026 04:15:43 Europe/Berlin] Attempting LDAP authentication for: admin@cbkhardware.com
+[08-Jun-2026 04:15:43 Europe/Berlin] LDAP connection established to: ldap://172.30.5.5
+[08-Jun-2026 04:15:43 Europe/Berlin] LDAP: Attempting email authentication: admin@cbkhardware.com
+[08-Jun-2026 04:15:43 Europe/Berlin] LDAP: Email login attempt: admin@cbkhardware.com
+[08-Jun-2026 04:15:44 Europe/Berlin] LDAP: Direct email bind failed, trying search...
+[08-Jun-2026 04:15:44 Europe/Berlin] LDAP: Search filter for email: (&(objectClass=user)(objectCategory=person)(mail=admin@cbkhardware.com))
+[08-Jun-2026 04:15:44 Europe/Berlin] LDAP: Search failed - Operations error
+[08-Jun-2026 04:15:44 Europe/Berlin] LDAP: Trying sAMAccountName from email: admin
+[08-Jun-2026 04:15:44 Europe/Berlin] LDAP: All authentication attempts failed for: admin@cbkhardware.com - Error: Invalid credentials
+[08-Jun-2026 04:15:44 Europe/Berlin] LDAP authentication returned false
+[08-Jun-2026 04:15:44 Europe/Berlin] LDAP authentication failed for: admin@cbkhardware.com
+[08-Jun-2026 04:15:44 Europe/Berlin] Authentication failed for: admin@cbkhardware.com
+[08-Jun-2026 04:17:02 Europe/Berlin] === LOGIN ATTEMPT ===
+[08-Jun-2026 04:17:02 Europe/Berlin] JSON input: Array
+(
+    [email] => admin@cbkhardware.com
+    [password] => 1
+)
+
+[08-Jun-2026 04:17:02 Europe/Berlin] Login data received: Array
+(
+    [email] => admin@cbkhardware.com
+    [password] => 1
+)
+
+[08-Jun-2026 04:17:02 Europe/Berlin] Username/Email input: admin@cbkhardware.com
+[08-Jun-2026 04:17:02 Europe/Berlin] Password length: 1
+[08-Jun-2026 04:17:02 Europe/Berlin] Local auth: Trying email: admin@cbkhardware.com
+[08-Jun-2026 04:17:02 Europe/Berlin] Attempting LDAP authentication for: admin@cbkhardware.com
+[08-Jun-2026 04:17:02 Europe/Berlin] LDAP connection established to: ldap://172.30.5.5
+[08-Jun-2026 04:17:02 Europe/Berlin] LDAP: Attempting email authentication: admin@cbkhardware.com
+[08-Jun-2026 04:17:02 Europe/Berlin] LDAP: Email login attempt: admin@cbkhardware.com
+[08-Jun-2026 04:17:03 Europe/Berlin] LDAP: Direct email bind failed, trying search...
+[08-Jun-2026 04:17:03 Europe/Berlin] LDAP: Search filter for email: (&(objectClass=user)(objectCategory=person)(mail=admin@cbkhardware.com))
+[08-Jun-2026 04:17:03 Europe/Berlin] LDAP: Search failed - Operations error
+[08-Jun-2026 04:17:03 Europe/Berlin] LDAP: Trying sAMAccountName from email: admin
+[08-Jun-2026 04:17:03 Europe/Berlin] LDAP: All authentication attempts failed for: admin@cbkhardware.com - Error: Invalid credentials
+[08-Jun-2026 04:17:03 Europe/Berlin] LDAP authentication returned false
+[08-Jun-2026 04:17:03 Europe/Berlin] LDAP authentication failed for: admin@cbkhardware.com
+[08-Jun-2026 04:17:03 Europe/Berlin] Authentication failed for: admin@cbkhardware.com
+[08-Jun-2026 04:17:06 Europe/Berlin] === LOGIN ATTEMPT ===
+[08-Jun-2026 04:17:06 Europe/Berlin] JSON input: Array
+(
+    [email] => admin@cbkhardware.com
+    [password] => 12345678
+)
+
+[08-Jun-2026 04:17:06 Europe/Berlin] Login data received: Array
+(
+    [email] => admin@cbkhardware.com
+    [password] => 12345678
+)
+
+[08-Jun-2026 04:17:06 Europe/Berlin] Username/Email input: admin@cbkhardware.com
+[08-Jun-2026 04:17:06 Europe/Berlin] Password length: 8
+[08-Jun-2026 04:17:06 Europe/Berlin] Local auth: Trying email: admin@cbkhardware.com
+[08-Jun-2026 04:17:06 Europe/Berlin] Attempting LDAP authentication for: admin@cbkhardware.com
+[08-Jun-2026 04:17:06 Europe/Berlin] LDAP connection established to: ldap://172.30.5.5
+[08-Jun-2026 04:17:06 Europe/Berlin] LDAP: Attempting email authentication: admin@cbkhardware.com
+[08-Jun-2026 04:17:06 Europe/Berlin] LDAP: Email login attempt: admin@cbkhardware.com
+[08-Jun-2026 04:17:06 Europe/Berlin] LDAP: Direct email bind failed, trying search...
+[08-Jun-2026 04:17:06 Europe/Berlin] LDAP: Search filter for email: (&(objectClass=user)(objectCategory=person)(mail=admin@cbkhardware.com))
+[08-Jun-2026 04:17:06 Europe/Berlin] LDAP: Search failed - Operations error
+[08-Jun-2026 04:17:06 Europe/Berlin] LDAP: Trying sAMAccountName from email: admin
+[08-Jun-2026 04:17:06 Europe/Berlin] LDAP: All authentication attempts failed for: admin@cbkhardware.com - Error: Invalid credentials
+[08-Jun-2026 04:17:06 Europe/Berlin] LDAP authentication returned false
+[08-Jun-2026 04:17:06 Europe/Berlin] LDAP authentication failed for: admin@cbkhardware.com
+[08-Jun-2026 04:17:06 Europe/Berlin] Authentication failed for: admin@cbkhardware.com
+[08-Jun-2026 04:17:09 Europe/Berlin] === LOGIN ATTEMPT ===
+[08-Jun-2026 04:17:09 Europe/Berlin] JSON input: Array
+(
+    [email] => admin@cbkhardware.com
+    [password] => password
+)
+
+[08-Jun-2026 04:17:09 Europe/Berlin] Login data received: Array
+(
+    [email] => admin@cbkhardware.com
+    [password] => password
+)
+
+[08-Jun-2026 04:17:09 Europe/Berlin] Username/Email input: admin@cbkhardware.com
+[08-Jun-2026 04:17:09 Europe/Berlin] Password length: 8
+[08-Jun-2026 04:17:09 Europe/Berlin] Local auth: Trying email: admin@cbkhardware.com
+[08-Jun-2026 04:17:09 Europe/Berlin] Attempting LDAP authentication for: admin@cbkhardware.com
+[08-Jun-2026 04:17:09 Europe/Berlin] LDAP connection established to: ldap://172.30.5.5
+[08-Jun-2026 04:17:09 Europe/Berlin] LDAP: Attempting email authentication: admin@cbkhardware.com
+[08-Jun-2026 04:17:09 Europe/Berlin] LDAP: Email login attempt: admin@cbkhardware.com
+[08-Jun-2026 04:17:09 Europe/Berlin] LDAP: Direct email bind failed, trying search...
+[08-Jun-2026 04:17:09 Europe/Berlin] LDAP: Search filter for email: (&(objectClass=user)(objectCategory=person)(mail=admin@cbkhardware.com))
+[08-Jun-2026 04:17:09 Europe/Berlin] LDAP: Search failed - Operations error
+[08-Jun-2026 04:17:09 Europe/Berlin] LDAP: Trying sAMAccountName from email: admin
+[08-Jun-2026 04:17:09 Europe/Berlin] LDAP: All authentication attempts failed for: admin@cbkhardware.com - Error: Invalid credentials
+[08-Jun-2026 04:17:09 Europe/Berlin] LDAP authentication returned false
+[08-Jun-2026 04:17:09 Europe/Berlin] LDAP authentication failed for: admin@cbkhardware.com
+[08-Jun-2026 04:17:09 Europe/Berlin] Authentication failed for: admin@cbkhardware.com
+[08-Jun-2026 04:17:47 Europe/Berlin] === LOGIN ATTEMPT ===
+[08-Jun-2026 04:17:47 Europe/Berlin] JSON input: Array
+(
+    [email] => admin@cbkhardware.com
+    [password] => admin123
+)
+
+[08-Jun-2026 04:17:47 Europe/Berlin] Login data received: Array
+(
+    [email] => admin@cbkhardware.com
+    [password] => admin123
+)
+
+[08-Jun-2026 04:17:47 Europe/Berlin] Username/Email input: admin@cbkhardware.com
+[08-Jun-2026 04:17:47 Europe/Berlin] Password length: 8
+[08-Jun-2026 04:17:47 Europe/Berlin] Local auth: Trying email: admin@cbkhardware.com
+[08-Jun-2026 04:17:47 Europe/Berlin] Attempting LDAP authentication for: admin@cbkhardware.com
+[08-Jun-2026 04:17:47 Europe/Berlin] LDAP connection established to: ldap://172.30.5.5
+[08-Jun-2026 04:17:47 Europe/Berlin] LDAP: Attempting email authentication: admin@cbkhardware.com
+[08-Jun-2026 04:17:47 Europe/Berlin] LDAP: Email login attempt: admin@cbkhardware.com
+[08-Jun-2026 04:17:48 Europe/Berlin] LDAP: Direct email bind failed, trying search...
+[08-Jun-2026 04:17:48 Europe/Berlin] LDAP: Search filter for email: (&(objectClass=user)(objectCategory=person)(mail=admin@cbkhardware.com))
+[08-Jun-2026 04:17:48 Europe/Berlin] LDAP: Search failed - Operations error
+[08-Jun-2026 04:17:48 Europe/Berlin] LDAP: Trying sAMAccountName from email: admin
+[08-Jun-2026 04:17:48 Europe/Berlin] LDAP: All authentication attempts failed for: admin@cbkhardware.com - Error: Invalid credentials
+[08-Jun-2026 04:17:48 Europe/Berlin] LDAP authentication returned false
+[08-Jun-2026 04:17:48 Europe/Berlin] LDAP authentication failed for: admin@cbkhardware.com
+[08-Jun-2026 04:17:48 Europe/Berlin] Authentication failed for: admin@cbkhardware.com
+[08-Jun-2026 04:19:05 Europe/Berlin] === LOGIN ATTEMPT ===
+[08-Jun-2026 04:19:05 Europe/Berlin] JSON input: Array
+(
+    [email] => admin@cbkhardware.com
+    [password] => password
+)
+
+[08-Jun-2026 04:19:05 Europe/Berlin] Login data received: Array
+(
+    [email] => admin@cbkhardware.com
+    [password] => password
+)
+
+[08-Jun-2026 04:19:05 Europe/Berlin] Username/Email input: admin@cbkhardware.com
+[08-Jun-2026 04:19:05 Europe/Berlin] Password length: 8
+[08-Jun-2026 04:19:05 Europe/Berlin] Local auth: Trying email: admin@cbkhardware.com
+[08-Jun-2026 04:19:06 Europe/Berlin] Local auth successful via email: admin@cbkhardware.com
+[08-Jun-2026 04:19:06 Europe/Berlin] Local authentication successful for: admin@cbkhardware.com
+[08-Jun-2026 04:19:06 Europe/Berlin] Login successful for: admin@cbkhardware.com
+[08-Jun-2026 04:19:06 Europe/Berlin] Token generated: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkI...
+[08-Jun-2026 04:19:36 Europe/Berlin] === LOGIN ATTEMPT ===
+[08-Jun-2026 04:19:36 Europe/Berlin] JSON input: Array
+(
+    [email] => mpc@gmail.com
+    [password] => 123456f@
+)
+
+[08-Jun-2026 04:19:36 Europe/Berlin] Login data received: Array
+(
+    [email] => mpc@gmail.com
+    [password] => 123456f@
+)
+
+[08-Jun-2026 04:19:36 Europe/Berlin] Username/Email input: mpc@gmail.com
+[08-Jun-2026 04:19:36 Europe/Berlin] Password length: 8
+[08-Jun-2026 04:19:36 Europe/Berlin] Local auth: Trying email: mpc@gmail.com
+[08-Jun-2026 04:19:36 Europe/Berlin] Local auth successful via email: mpc@gmail.com
+[08-Jun-2026 04:19:36 Europe/Berlin] Local authentication successful for: mpc@gmail.com
+[08-Jun-2026 04:19:36 Europe/Berlin] Login successful for: mpc@gmail.com
+[08-Jun-2026 04:19:36 Europe/Berlin] Token generated: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkI...
+[08-Jun-2026 04:21:05 Europe/Berlin] === LOGIN ATTEMPT ===
+[08-Jun-2026 04:21:05 Europe/Berlin] JSON input: Array
+(
+    [email] => mpc@gmail.com
+    [password] => 123456f@
+)
+
+[08-Jun-2026 04:21:05 Europe/Berlin] Login data received: Array
+(
+    [email] => mpc@gmail.com
+    [password] => 123456f@
+)
+
+[08-Jun-2026 04:21:05 Europe/Berlin] Username/Email input: mpc@gmail.com
+[08-Jun-2026 04:21:05 Europe/Berlin] Password length: 8
+[08-Jun-2026 04:21:05 Europe/Berlin] Local auth: Trying email: mpc@gmail.com
+[08-Jun-2026 04:21:05 Europe/Berlin] Local auth successful via email: mpc@gmail.com
+[08-Jun-2026 04:21:05 Europe/Berlin] Local authentication successful for: mpc@gmail.com
+[08-Jun-2026 04:21:05 Europe/Berlin] Login successful for: mpc@gmail.com
+[08-Jun-2026 04:21:05 Europe/Berlin] Token generated: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkI...
+[08-Jun-2026 04:23:33 Europe/Berlin] === LOGIN ATTEMPT ===
+[08-Jun-2026 04:23:33 Europe/Berlin] JSON input: Array
+(
+    [email] => mpc@gmail.com
+    [password] => 12345678
+)
+
+[08-Jun-2026 04:23:33 Europe/Berlin] Login data received: Array
+(
+    [email] => mpc@gmail.com
+    [password] => 12345678
+)
+
+[08-Jun-2026 04:23:33 Europe/Berlin] Username/Email input: mpc@gmail.com
+[08-Jun-2026 04:23:33 Europe/Berlin] Password length: 8
+[08-Jun-2026 04:23:33 Europe/Berlin] Local auth: Trying email: mpc@gmail.com
+[08-Jun-2026 04:23:33 Europe/Berlin] Attempting LDAP authentication for: mpc@gmail.com
+[08-Jun-2026 04:23:33 Europe/Berlin] LDAP connection established to: ldap://172.30.5.5
+[08-Jun-2026 04:23:33 Europe/Berlin] LDAP: Attempting email authentication: mpc@gmail.com
+[08-Jun-2026 04:23:33 Europe/Berlin] LDAP: Email login attempt: mpc@gmail.com
+[08-Jun-2026 04:23:33 Europe/Berlin] LDAP: Direct email bind failed, trying search...
+[08-Jun-2026 04:23:33 Europe/Berlin] LDAP: Search filter for email: (&(objectClass=user)(objectCategory=person)(mail=mpc@gmail.com))
+[08-Jun-2026 04:23:33 Europe/Berlin] LDAP: Search failed - Operations error
+[08-Jun-2026 04:23:33 Europe/Berlin] LDAP: Trying sAMAccountName from email: mpc
+[08-Jun-2026 04:23:33 Europe/Berlin] LDAP: All authentication attempts failed for: mpc@gmail.com - Error: Invalid credentials
+[08-Jun-2026 04:23:33 Europe/Berlin] LDAP authentication returned false
+[08-Jun-2026 04:23:33 Europe/Berlin] LDAP authentication failed for: mpc@gmail.com
+[08-Jun-2026 04:23:33 Europe/Berlin] Authentication failed for: mpc@gmail.com
+[08-Jun-2026 04:23:36 Europe/Berlin] === LOGIN ATTEMPT ===
+[08-Jun-2026 04:23:36 Europe/Berlin] JSON input: Array
+(
+    [email] => mpc@gmail.com
+    [password] => 123456f@
+)
+
+[08-Jun-2026 04:23:36 Europe/Berlin] Login data received: Array
+(
+    [email] => mpc@gmail.com
+    [password] => 123456f@
+)
+
+[08-Jun-2026 04:23:36 Europe/Berlin] Username/Email input: mpc@gmail.com
+[08-Jun-2026 04:23:36 Europe/Berlin] Password length: 8
+[08-Jun-2026 04:23:36 Europe/Berlin] Local auth: Trying email: mpc@gmail.com
+[08-Jun-2026 04:23:36 Europe/Berlin] Local auth successful via email: mpc@gmail.com
+[08-Jun-2026 04:23:36 Europe/Berlin] Local authentication successful for: mpc@gmail.com
+[08-Jun-2026 04:23:36 Europe/Berlin] Login successful for: mpc@gmail.com
+[08-Jun-2026 04:23:36 Europe/Berlin] Token generated: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkI...

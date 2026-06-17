@@ -1,0 +1,386 @@
+    <!-- New Request Modal -->
+    <div id="new-request-modal" class="modal-overlay hidden">
+      <div
+        class="modal w-full max-w-4xl mx-4"
+        style="max-height: 92vh; display: flex; flex-direction: column"
+      >
+        <div
+          class="p-6 border-b border-slate-100 flex items-center justify-between flex-shrink-0 bg-white rounded-t-2xl"
+        >
+          <div>
+            <h3
+              id="nrm-title"
+              class="font-display font-bold text-xl text-slate-800"
+            >
+              New Request
+            </h3>
+            <p id="nrm-subtitle" class="text-sm text-slate-400 mt-0.5">
+              Choose a request category to get started
+            </p>
+          </div>
+          <button
+            onclick="closeModal('new-request-modal')"
+            class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-slate-100 transition-colors text-slate-400 hover:text-slate-600"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-5 h-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <!-- Step Indicator -->
+        <div class="px-6 pt-5 pb-3 flex items-center gap-2 flex-shrink-0">
+          <div class="flex items-center gap-2">
+            <div
+              class="step-dot text-xs font-bold"
+              id="step-dot-1"
+              style="
+                background: #2533e0;
+                color: white;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              1
+            </div>
+            <span class="text-xs text-slate-500 hidden sm:inline"
+              >Category</span
+            >
+          </div>
+          <div class="flex-1 h-0.5 bg-slate-200 rounded-full"></div>
+          <div class="flex items-center gap-2">
+            <div
+              class="step-dot text-xs font-bold"
+              id="step-dot-2"
+              style="
+                background: #e2e8f0;
+                color: #94a3b8;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              2
+            </div>
+            <span class="text-xs text-slate-500 hidden sm:inline">Form</span>
+          </div>
+          <div class="flex-1 h-0.5 bg-slate-200 rounded-full"></div>
+          <div class="flex items-center gap-2">
+            <div
+              class="step-dot text-xs font-bold"
+              id="step-dot-3"
+              style="
+                background: #e2e8f0;
+                color: #94a3b8;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              3
+            </div>
+            <span class="text-xs text-slate-500 hidden sm:inline">Review</span>
+          </div>
+        </div>
+        <!-- Step 1: Category -->
+        <div id="nrm-step1" class="p-6 flex-1 overflow-y-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <button
+              type="button"
+              onclick="selectCategory('SUPPLIER')"
+              class="category-card group text-left p-6 rounded-2xl border-2 border-slate-200 hover:border-blue-500 hover:shadow-lg transition-all duration-300"
+            >
+              <div
+                class="w-14 h-14 rounded-2xl mb-4 flex items-center justify-center text-3xl"
+                style="background: #dde6ff"
+              >
+                🏭
+              </div>
+              <div
+                class="font-display font-bold text-slate-800 text-base group-hover:text-blue-700 transition-colors"
+              >
+                Supplier / Vendor
+              </div>
+              <div class="text-xs text-slate-400 mt-2 leading-relaxed">
+                Create, modify, or block vendor master data in SAP.
+              </div>
+              <div
+                class="mt-4 inline-flex items-center gap-1 text-xs font-bold px-3 py-1 rounded-full"
+                style="background: #dde6ff; color: #1e28b4"
+              >
+                SRRF
+              </div>
+            </button>
+            <button
+              type="button"
+              onclick="selectCategory('CUSTOMER')"
+              class="category-card group text-left p-6 rounded-2xl border-2 border-slate-200 hover:border-green-500 hover:shadow-lg transition-all duration-300"
+            >
+              <div
+                class="w-14 h-14 rounded-2xl mb-4 flex items-center justify-center text-3xl"
+                style="background: #d1fae5"
+              >
+                🏢
+              </div>
+              <div
+                class="font-display font-bold text-slate-800 text-base group-hover:text-green-700 transition-colors"
+              >
+                Customer Registration
+              </div>
+              <div class="text-xs text-slate-400 mt-2 leading-relaxed">
+                Create or update Sold-To, Ship-To, Bill-To, Payer records.
+              </div>
+              <div
+                class="mt-4 inline-flex items-center gap-1 text-xs font-bold px-3 py-1 rounded-full"
+                style="background: #d1fae5; color: #065f46"
+              >
+                CRRF
+              </div>
+            </button>
+            <button
+              type="button"
+              onclick="selectCategory('EMPLOYEE')"
+              class="category-card group text-left p-6 rounded-2xl border-2 border-slate-200 hover:border-purple-500 hover:shadow-lg transition-all duration-300"
+            >
+              <div
+                class="w-14 h-14 rounded-2xl mb-4 flex items-center justify-center text-3xl"
+                style="background: #ede9fe"
+              >
+                👤
+              </div>
+              <div
+                class="font-display font-bold text-slate-800 text-base group-hover:text-purple-700 transition-colors"
+              >
+                Employee Data Maintenance
+              </div>
+              <div class="text-xs text-slate-400 mt-2 leading-relaxed">
+                Create, modify, block or unblock employee BP records.
+              </div>
+              <div
+                class="mt-4 inline-flex items-center gap-1 text-xs font-bold px-3 py-1 rounded-full"
+                style="background: #ede9fe; color: #5b21b6"
+              >
+                EDMRF
+              </div>
+            </button>
+            <button
+              type="button"
+              onclick="selectCategory('MATERIAL')"
+              class="category-card group text-left p-6 rounded-2xl border-2 border-slate-200 hover:border-amber-500 hover:shadow-lg transition-all duration-300"
+            >
+              <div
+                class="w-14 h-14 rounded-2xl mb-4 flex items-center justify-center text-3xl"
+                style="background: #fef3c7"
+              >
+                📦
+              </div>
+              <div
+                class="font-display font-bold text-slate-800 text-base group-hover:text-amber-700 transition-colors"
+              >
+                Material Maintenance
+              </div>
+              <div class="text-xs text-slate-400 mt-2 leading-relaxed">
+                Create, modify, or block material master data in SAP.
+              </div>
+              <div
+                class="mt-4 inline-flex items-center gap-1 text-xs font-bold px-3 py-1 rounded-full"
+                style="background: #fef3c7; color: #b45309"
+              >
+                MMF
+              </div>
+            </button>
+          </div>
+        </div>
+        <!-- Step 2: Form -->
+        <div
+          id="nrm-step2"
+          class="hidden"
+          style="
+            display: none;
+            flex-direction: column;
+            flex: 1;
+            overflow: hidden;
+          "
+        >
+          <div class="overflow-y-auto flex-1" id="nrm-form-body"></div>
+          <div
+            class="px-6 py-4 border-t border-slate-100 flex gap-3 bg-white flex-shrink-0"
+          >
+            <button
+              type="button"
+              onclick="nrmGoStep(1)"
+              class="btn btn-secondary flex items-center gap-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+                />
+              </svg>
+              Back
+            </button>
+            <button
+              type="button"
+              onclick="nrmGoStep(3)"
+              class="btn btn-primary flex-1 justify-center items-center gap-2"
+            >
+              Review & Submit
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Step 3: Review -->
+        <div
+          id="nrm-step3"
+          class="hidden"
+          style="
+            display: none;
+            flex-direction: column;
+            flex: 1;
+            overflow: hidden;
+          "
+        >
+          <div
+            class="overflow-y-auto px-6 py-4 flex-1"
+            id="nrm-review-body"
+          ></div>
+          <div
+            class="px-6 py-4 border-t border-slate-100 bg-white flex-shrink-0"
+          >
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+              <div>
+                <label class="form-label flex items-center gap-1"
+                  >Priority
+                  <span class="text-xs text-slate-400">(optional)</span></label
+                >
+                <select id="nrm-priority" class="form-input">
+                  <option value="low">🔵 Low</option>
+                  <option value="normal" selected>🟢 Normal</option>
+                  <option value="high">🟠 High</option>
+                  <option value="urgent">🔴 Urgent</option>
+                </select>
+              </div>
+              <div>
+                <label class="form-label flex items-center gap-1"
+                  >Remarks / Reason
+                  <span class="text-xs text-slate-400">(optional)</span></label
+                >
+                <input
+                  type="text"
+                  id="nrm-remarks"
+                  class="form-input"
+                  placeholder="Add any additional notes or instructions..."
+                />
+              </div>
+            </div>
+            <div class="flex gap-3">
+              <button
+                type="button"
+                onclick="nrmGoStep(2)"
+                class="btn btn-secondary flex items-center gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+                  />
+                </svg>
+                Back to Form
+              </button>
+              <button
+                type="button"
+                onclick="handleCreateRequest('draft')"
+                class="btn btn-secondary flex-1 justify-center items-center gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
+                  />
+                </svg>
+                Save as Draft
+              </button>
+              <button
+                type="button"
+                onclick="handleCreateRequest('submit')"
+                class="btn btn-primary flex-1 justify-center items-center gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
+                  />
+                </svg>
+                Submit Request
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+

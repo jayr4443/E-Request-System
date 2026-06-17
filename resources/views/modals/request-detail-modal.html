@@ -1,0 +1,41 @@
+    <!-- Request Detail Modal - Update header -->
+    <div id="request-detail-modal" class="modal-overlay hidden">
+      <div class="modal w-full max-w-3xl mx-4">
+        <div
+          class="p-6 border-b border-slate-100 flex items-center justify-between"
+        >
+          <div>
+            <h3
+              id="modal-req-no"
+              class="font-display font-bold text-lg text-slate-800"
+            >
+              Request Details
+            </h3>
+            <p id="modal-req-subject" class="text-sm text-slate-500 mt-0.5"></p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button
+              onclick="closeModal('request-detail-modal', event)"
+              class="text-slate-400 hover:text-slate-600 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div id="request-detail-content" class="p-6"></div>
+      </div>
+    </div>
+
